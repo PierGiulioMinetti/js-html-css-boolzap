@@ -60,7 +60,7 @@
                     
                         v-for="element in contacts"
                     >
-                        <img src="./img/avatar_1.jpg" alt="">
+                        <img :src="'./img/avatar' + element.avatar + '.jpg'" alt="">
                         {{element.name}}
                     </div>
 
