@@ -10,7 +10,15 @@
 
 /* utility */
 
-i:hover,
+i{
+    font-size: 22px;
+}
+
+i:hover{
+    color: rgb(126, 117, 117);
+    cursor: pointer;
+    transition: color 0.4s;
+}
 img:hover{
     cursor: pointer;
 }
@@ -24,7 +32,7 @@ img{
 
 /* editing section */
 
-/* general container */
+/* GENERAL CONTAINER */
 .container{
     height: 100vh;
     display: flex;
@@ -39,7 +47,7 @@ img{
     )
 }
 
-/* container messages */
+/* CONTAINER MESSAGES */
 .container-messages{
     display: flex;
     height: 90vh;
@@ -48,7 +56,7 @@ img{
     background-color: rgb(255, 255, 255);
 }
 
-/* aside */
+/* ASIDE */
 aside{
     width: 35%;
     background-color: #ffffff;
@@ -122,6 +130,11 @@ aside{
     align-items: center;
     border-bottom: 1px solid rgb(245, 245, 245);
     
+}
+
+.aside-container-single-user:hover{
+    background-color: rgb(221, 211, 211);
+    cursor: pointer;
 }
 
 /* container messages right side */
