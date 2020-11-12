@@ -12,8 +12,12 @@
 
 /* editing section */
 
+/* general container */
 .container{
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(
         to bottom,
         #009688 0%,
@@ -21,4 +25,27 @@
         #d2dbdc 15%,
         #d2dbdc 100%
     )
+}
+
+/* container messages */
+.container-messages{
+    display: flex;
+    height: 90vh;
+    width: 1200px;
+    max-width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+/* aside */
+aside{
+    width: 35%;
+    background-color: rgb(233, 192, 192);
+}
+
+
+/* container messages right side */
+.container-messages-right-side{
+    background-color: rgb(219, 250, 219);
+    flex-grow: 1;
 }
