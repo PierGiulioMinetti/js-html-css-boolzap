@@ -53,7 +53,24 @@ aside{
     background-color:  rgb(234, 234, 234);
     display: flex;
     align-items: center;
-  
+    justify-content: space-between;
+}
+
+.fa-circle-notch,
+.fa-comment-alt,
+.fa-ellipsis-v{
+    margin: 0 7px;
+    color: rgb(177, 177, 177);
+}
+
+.fa-ellipsis-v{
+    padding-right: 15px;
+}
+
+.aside-nome-utente-img{
+    display: flex;
+    align-items: center;
+    
 }
 
 .aside-notifiche{
