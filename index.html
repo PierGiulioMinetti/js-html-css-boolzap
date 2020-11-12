@@ -20,8 +20,9 @@
             <aside>
                 <div class="aside-nome-utente">
                     <div class="aside-nome-utente-img">
-                        <img src="./img/avatar_1.jpg" alt="">
-                        <span> Nome Utente</span>
+                        <img src="''./img/avatar' + avatar" alt="">
+                    {{user.name}}
+                        
                     </div>
                     <!--aside icon -->
                     <div class="aside-icon-nome-utente">
@@ -55,22 +56,15 @@
                     <input type="text" placeholder="&#128269 Cerca o inizia una nuova chat">
                 </div>
                 <div class="aside-container-users">
-                    <div class="aside-container-single-user">
+                    <div class="aside-container-single-user"
+                    
+                        v-for="element in contacts"
+                    >
                         <img src="./img/avatar_1.jpg" alt="">
-                        nome utente
+                        {{element.name}}
                     </div>
-                    <div class="aside-container-single-user">
-                        <img src="./img/avatar_1.jpg" alt="">
-                        nome utente
-                    </div>
-                    <div class="aside-container-single-user">
-                        <img src="./img/avatar_1.jpg" alt="">
-                        nome utente
-                    </div>
-                    <div class="aside-container-single-user">
-                        <img src="./img/avatar_1.jpg" alt="">
-                        nome utente
-                    </div>
+
+
                 </div>
             </aside>
             <!-- right side content -->

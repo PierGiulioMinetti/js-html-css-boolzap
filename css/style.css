@@ -166,6 +166,7 @@ aside{
     align-items: center;
     height: 70px;
     background-color: #f4eeea;
+    overflow-x: hidden;
 }
 
 .footer-search-bar>input{
