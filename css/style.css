@@ -51,7 +51,7 @@ img{
 .container-messages{
     display: flex;
     height: 90vh;
-    width: 1200px;
+    width: 1400px;
     max-width: 100%;
     background-color: rgb(255, 255, 255);
 }
@@ -95,12 +95,22 @@ aside{
     
 }
 
+.color-gray{
+    color:gray
+    
+}
+
 .fa-bell-slash{
     background-color: white;
     font-size: 40px;
     border-radius: 50%;
     color: #74dcff;;
     margin: 0 20px;
+    padding: 10px;
+    font-size: 25px;
+    font-size: 20px;
+    position: relative;
+    right: 5px;
 }
 
 .aside-search-bar{
@@ -112,12 +122,26 @@ aside{
 
 }
 
-.aside-search-bar>input{
+#messaggi-notifiche{
+    font-weight: 500;
+}
+
+.content-aside-search-bar{
     width: 97%;
-    height: 40px;
+    background-color: white;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.content-aside-search-bar>input{
+    width: 90%;
+    height: 35px;
     padding: 0 20px;
     border-radius: 5px;
-    
+    border: none;
+    color: #d8d9da;;
 }
 
 .aside-container-users{
@@ -133,7 +157,7 @@ aside{
 }
 
 .aside-container-single-user:hover{
-    background-color: rgb(221, 211, 211);
+    background-color: rgba(235, 223, 223, 0.7);
     cursor: pointer;
 }
 
@@ -155,6 +179,17 @@ aside{
     justify-content: space-between;
     background-color: rgb(234, 234, 234);
     border-left: 1px solid #d6d6d6;;
+}
+
+.testo-smaller{
+    font-size: smaller;
+    margin-top: 3px;
+    font-weight: 700;
+}
+
+#lente-search{
+    font-size: 17px;
+    margin-left: 10px;
 }
 
 .fa-search,
@@ -183,22 +218,23 @@ aside{
 }
 
 .footer-search-bar>input{
-    width: 600px;
+    width: 700px;
     height: 50px;
     max-width: 100%;
     margin: 0 20px;
     border-radius: 5px;
     padding: 0 15px;
+    border: none;
 }
 
 .fa-smile{
     margin-left: 50px;
     font-size: 25px;
-    color: rgb#697376;
+    color: #697376;
 }
 .fa-microphone{
     margin-right:  50px;
     font-size: 25px;
-    color:  rgb#697376;
+    color:  #697376;
 }
 
