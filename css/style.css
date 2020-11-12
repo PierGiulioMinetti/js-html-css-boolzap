@@ -10,6 +10,11 @@
 
 /* utility */
 
+i:hover,
+img:hover{
+    cursor: pointer;
+}
+
 img{
     max-width: 70px;
     border-radius: 50%;
@@ -124,6 +129,8 @@ aside{
     background-color: rgb(219, 250, 219);
     flex-grow: 1;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
     /* background-image: url("../img/mine.jpg"); */
 }
 
@@ -148,4 +155,36 @@ aside{
     align-items: center;
 }
 
+.container-right-side-main{
+    flex-grow: 1;
+    background-image: url('../img/mine.jpg');
+}
+
+.container-right-side-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #f4eeea;
+}
+
+.footer-search-bar>input{
+    width: 600px;
+    height: 50px;
+    max-width: 100%;
+    margin: 0 20px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.fa-smile{
+    margin-left: 50px;
+    font-size: 25px;
+    color: rgb#697376;
+}
+.fa-microphone{
+    margin-right:  50px;
+    font-size: 25px;
+    color:  rgb#697376;
+}
 
