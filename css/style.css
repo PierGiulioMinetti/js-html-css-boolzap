@@ -9,6 +9,12 @@
 
 /* utility */
 
+img{
+    max-width: 70px;
+    border-radius: 50%;
+    padding: 0 10px;
+    margin: 10px 0;
+}
 
 /* editing section */
 
@@ -34,18 +40,58 @@
     width: 1200px;
     max-width: 100%;
     background-color: rgb(255, 255, 255);
-    
 }
 
 /* aside */
 aside{
     width: 35%;
     background-color: rgb(233, 192, 192);
+    overflow-y: auto;
 }
 
+.aside-nome-utente{
+    background-color:  rgb(234, 234, 234);
+    display: flex;
+    align-items: center;
+  
+}
+
+.aside-notifiche{
+    height: 80px;
+    background-color: #74dcff;;
+    display: flex;
+    align-items: center;
+    
+}
+
+.fa-bell-slash{
+    background-color: white;
+    font-size: 40px;
+    border-radius: 50%;
+    color: #74dcff;;
+    margin: 0 20px;
+}
+
+.aside-search-bar{
+    height: 50px;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aside-search-bar>input{
+    width: 90%;
+    height: 40px;
+    padding: 0 20px;
+    
+}
 
 /* container messages right side */
 .container-messages-right-side{
     background-color: rgb(219, 250, 219);
     flex-grow: 1;
+    overflow-y: auto;
+    /* background-image: url("../img/mine.jpg"); */
 }
