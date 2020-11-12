@@ -1,0 +1,24 @@
+/* general reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* *************************** */
+
+/* utility */
+
+
+/* editing section */
+
+.container{
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        #009688 0%,
+        #009688 15%,
+        #d2dbdc 15%,
+        #d2dbdc 100%
+    )
+}
