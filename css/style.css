@@ -221,7 +221,7 @@ aside{
     justify-content: flex-end;
     max-width: 300px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius:10px;
     display: flex;
     flex-direction: column;
     margin: 15px 0;
@@ -229,11 +229,11 @@ aside{
 }
 
 .sent{
-    background-color: greenyellow;
+    background-color: #cbfbb3;
     justify-content: flex-end;
     max-width: 300px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     margin: 15px 0;
