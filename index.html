@@ -63,11 +63,13 @@
                     <div class="aside-container-single-user hover-gray"
 
                         v-for="(element, index) in contacts"
-
-                        @click="index"
+                        @click="mostraIndice(index)"
                     >
                         <img :src="'./img/avatar' + element.avatar + '.jpg'" alt="">
-                        {{element.name}}
+                        <!-- FUNZIONE CLICK -->
+                        <div>
+                            {{element.name}}
+                        </div>
                     </div>
 
 
@@ -98,17 +100,16 @@
                 </div>
                 <!-- container messages -->
                 <div class="container-right-side-main"
-                    v-for="messages in contacts"
+                    v-for="(element, index) in contacts"
                 
-                >
-                    
-                    <div class="received"
                     >
-                       {{messages.messages[0].message}}
+                    
+                    <div class="received">
+                       {{element.messages[0].message}}
                     </div>  
 
                     <div class="sent">
-                        {{messages.messages[1].message}}
+                        {{element.messages[1].message}}
                     </div>  
                     
                 </div>

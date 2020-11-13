@@ -4,6 +4,8 @@
 var app = new Vue({
     el: '#app',
     data: {
+
+        activeIndex: 0,
         // nostro account
         user: {
             name: 'Nome Utente',
@@ -96,5 +98,9 @@ var app = new Vue({
             },
         ]
     },
-    methods: {}
+    methods: {
+        mostraIndice(index){
+            console.log(index);
+        }
+    }
 });
