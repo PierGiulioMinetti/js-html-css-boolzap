@@ -61,8 +61,10 @@
                 </div>
                 <div class="aside-container-users">
                     <div class="aside-container-single-user hover-gray"
-                    
-                        v-for="element in contacts"
+
+                        v-for="(element, index) in contacts"
+
+                        @click="index"
                     >
                         <img :src="'./img/avatar' + element.avatar + '.jpg'" alt="">
                         {{element.name}}
@@ -95,16 +97,18 @@
                     </div>
                 </div>
                 <!-- container messages -->
-                <div class="container-right-side-main">
+                <div class="container-right-side-main"
+                    v-for="messages in contacts"
+                
+                >
                     
-                    <div class="received">
-                        ciao 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos tenetur nisi, nostrum officiis doloribus eligendi? Maxime, a. Perspiciatis nulla et repellendus libero corrupti inventore ipsam mollitia unde ipsum, quaerat doloremque q
+                    <div class="received"
+                    >
+                       {{messages.messages[0].message}}
                     </div>  
 
                     <div class="sent">
-                        ciao 
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos tenetur nisi, nostrum officiis doloribus eligendi? Maxime, a. Perspiciatis nulla et repellendus libero corrupti inventore ipsam mollitia unde ipsum, quaerat doloremque q
+                        {{messages.messages[1].message}}
                     </div>  
                     
                 </div>
