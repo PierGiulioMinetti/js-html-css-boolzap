@@ -100,6 +100,7 @@ var app = new Vue({
     },
     methods: {
         mostraIndice(index){
+            this.activeIndex=index;
             console.log(index);
         }
     }

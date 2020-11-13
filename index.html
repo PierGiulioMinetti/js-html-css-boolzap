@@ -100,17 +100,15 @@
                 </div>
                 <!-- container messages -->
                 <div class="container-right-side-main"
-                    v-for="(element, index) in contacts"
-                
+                    v-for="(element, index) in contacts[activeIndex].messages"
+
                     >
                     
                     <div class="received">
-                       {{element.messages[0].message}}
+                       {{element.message}}
                     </div>  
 
-                    <div class="sent">
-                        {{element.messages[1].message}}
-                    </div>  
+                
                     
                 </div>
                 <div class="container-right-side-footer">
