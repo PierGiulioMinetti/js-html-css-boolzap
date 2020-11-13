@@ -211,7 +211,7 @@ aside{
     display: flex;  
     flex-direction: column;
 }
-
+/* ****************************** need styling */
 .received{
     background-color: white;
     justify-content: flex-end;
