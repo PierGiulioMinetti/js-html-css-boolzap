@@ -79,7 +79,8 @@
             <div class="container-messages-right-side">
                 <div class="container-right-side-header">
                     <div class="container-right-side-header-img">
-                        <img src="./img/avatar_1.jpg" alt="">
+                        <img :src="'./img/avatar' +  contacts[activeIndex].avatar + '.jpg'" alt="">
+                        <!-- FIX HEEEEEEEEEEEEEEEEEEEERE -->
                         <div class="container-right-side-img-txt"
                         >
                             <div>
