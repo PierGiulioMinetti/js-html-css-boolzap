@@ -161,6 +161,7 @@ aside{
     cursor: pointer;
 }
 
+
 /* container messages right side */
 .container-messages-right-side{
     background-color: rgb(219, 250, 219);
@@ -206,7 +207,35 @@ aside{
 .container-right-side-main{
     flex-grow: 1;
     background-image: url('../img/mine.jpg');
+    padding: 50px;
+    display: flex;  
+    flex-direction: column;
 }
+
+.received{
+    background-color: white;
+    justify-content: flex-end;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-self: flex-start;
+}
+
+.sent{
+    background-color: greenyellow;
+    justify-content: flex-end;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-self: flex-end;
+}
+
 
 .container-right-side-footer{
     display: flex;
