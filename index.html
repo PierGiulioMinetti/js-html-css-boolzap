@@ -80,9 +80,10 @@
                 <div class="container-right-side-header">
                     <div class="container-right-side-header-img">
                         <img src="./img/avatar_1.jpg" alt="">
-                        <div class="container-right-side-img-txt">
+                        <div class="container-right-side-img-txt"
+                        >
                             <div>
-                                Michele
+                                {{ contacts[activeIndex].name}}
                                 <div class="color-gray testo-smaller"> 
                                     Ultimo accesso oggi alle 10.35
                                 </div>
@@ -107,6 +108,9 @@
                     <!-- ******** need styling -->
                     <div :class="element.status" >
                        {{element.message}}
+                       <p>
+                           {{element.date}}
+                       </p>
                     </div>  
 
                 

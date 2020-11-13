@@ -10,6 +10,10 @@
 
 /* utility */
 
+p{
+    font-size: smaller;
+}
+
 i{
     font-size: 22px;
 }
