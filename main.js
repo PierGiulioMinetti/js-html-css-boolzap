@@ -113,8 +113,18 @@ var app = new Vue({
                 status: 'sent',
                 
             });
-            
+        },
+
+        messageTimeOut(activeIndex){
+            setTimeout(() => {
+                this.contacts[activeIndex].messages.push({
+                    date: this.realDdate,
+                    message: 'ok bro',
+                    status: 'received',
+                });
+            }, 1500);
         }
-    }
+
+    } // --> end methods
 
 });
