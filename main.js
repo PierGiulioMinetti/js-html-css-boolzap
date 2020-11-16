@@ -113,6 +113,7 @@ var app = new Vue({
                 status: 'sent',
                 
             });
+            this.NuovoMessaggio = '';
         },
 
         messageTimeOut(activeIndex){
