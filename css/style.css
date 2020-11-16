@@ -45,8 +45,8 @@ img{
 }
 
 input[type=text]:focus{
-   border-color: #8e928e;
-   box-shadow: 0 0 8px 0 #8e928e;
+   border-color: #5aabda;
+   box-shadow: 0 0 8px 0 #5aabda;
 }
 
 /* editing section */
@@ -185,9 +185,13 @@ aside{
     cursor: pointer;
 }
 
-.aside-container-users >.aside-container-single-user:focus{
-    background-color: green;
+/* NON RIESCO A FARLO FUNZIONARE */
+/* *************************** */
+.aside-container-single-user:active {
+    background: #eee;
 }
+
+/* ***************************** */
 
 
 /* container messages right side */
