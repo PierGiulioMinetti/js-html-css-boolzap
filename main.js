@@ -103,18 +103,18 @@ var app = new Vue({
         mostraIndice(index){
             this.activeIndex=index;
             console.log(index);
-            }
         },
         
         addMessage(activeIndex){
-           
-                this.contacts[activeIndex].messages.push({
-                    date: this.realDdate,
-                    message: this.NuovoMessaggio,
-                    status: 'sent',
-
-                });
+            
+            this.contacts[activeIndex].messages.push({
+                date: this.realDdate,
+                message: this.NuovoMessaggio,
+                status: 'sent',
+                
+            });
             
         }
+    }
 
 });
