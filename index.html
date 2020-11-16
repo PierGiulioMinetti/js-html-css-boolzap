@@ -123,7 +123,10 @@
                         </i>
                     </div>
                     <div class="footer-search-bar">
-                        <input type="text" placeholder="Scrivi un messaggio">
+                        <input  
+                            @keyup.enter="addMessage(activeIndex)" 
+                            type="text" 
+                            placeholder="Scrivi un messaggio">
                     </div>
                     <div class="footer-record">
                         <i class="fas fa-microphone">
@@ -139,6 +142,7 @@
 
 
     <!-- js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.6/dayjs.min.js'></script>
     <script src="./main.js"></script>
 </body>
 </html>

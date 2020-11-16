@@ -4,8 +4,9 @@
 var app = new Vue({
     el: '#app',
     data: {
-
+        realDdate : dayjs().format('DD/MM/YYYY HH:mm'),
         activeIndex: 0,
+        messaggio: '',
         // nostro account
         user: {
             name: 'Nome Utente',
@@ -102,6 +103,18 @@ var app = new Vue({
         mostraIndice(index){
             this.activeIndex=index;
             console.log(index);
+            }
+        },
+        
+        addMessage(activeIndex){
+            if (! this.messaggio == ''){
+                this.contacts[activeIndex].messages.push({
+                    date: this.realDdate,
+                    message: this.messaggio,
+                    status: 'sent',
+
+                });
+            }
         }
-    }
+
 });
