@@ -60,10 +60,10 @@
                     </div>
                 </div>
                 <div class="aside-container-users">
-                    <div class="aside-container-single-user hover-gray"
-
-                        v-for="(element, index) in contacts"
-                        @click="mostraIndice(index)"
+                    <div class="aside-container-single-user hover-gray "
+                         v-for="(element, index) in contacts"
+                         @click="mostraIndice(index)"
+                         :class="activeIndex == index ? 'active' :  ' ' "
                     >
                         <img :src="'./img/avatar' + element.avatar + '.jpg'" alt="">
                         <!-- FUNZIONE CLICK -->
@@ -115,6 +115,7 @@
                             {{element.date}}
                         </p>
                     </div>  
+                    
                     
                     
                     
