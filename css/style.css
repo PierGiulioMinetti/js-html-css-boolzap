@@ -238,6 +238,7 @@ aside{
     padding: 50px;
     display: flex;  
     flex-direction: column;
+    overflow-y: auto;
 }
 /* ****************************** need styling */
 .received{

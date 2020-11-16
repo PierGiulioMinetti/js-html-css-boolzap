@@ -6,7 +6,7 @@ var app = new Vue({
     data: {
         realDdate : dayjs().format('DD/MM/YYYY HH:mm'),
         activeIndex: 0,
-        messaggio: '',
+        NuovoMessaggio: '',
         // nostro account
         user: {
             name: 'Nome Utente',
@@ -107,14 +107,14 @@ var app = new Vue({
         },
         
         addMessage(activeIndex){
-            if (! this.messaggio == ''){
+           
                 this.contacts[activeIndex].messages.push({
                     date: this.realDdate,
-                    message: this.messaggio,
+                    message: this.NuovoMessaggio,
                     status: 'sent',
 
                 });
-            }
+            
         }
 
 });

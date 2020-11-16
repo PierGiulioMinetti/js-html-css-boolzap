@@ -124,8 +124,9 @@
                     </div>
                     <div class="footer-search-bar">
                         <input  
+                            v-model="NuovoMessaggio"
                             @keyup.enter="addMessage(activeIndex)" 
-                            type="text" 
+                            type="text" m
                             placeholder="Scrivi un messaggio">
                     </div>
                     <div class="footer-record">
