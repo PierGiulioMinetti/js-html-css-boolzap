@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- font awesome -->
@@ -97,7 +100,8 @@
                             <div>
                                 {{ contacts[activeIndex].name}}
                                 <div class="color-gray testo-smaller"> 
-                                    Ultimo accesso oggi alle 10.35
+                                    <!-- ORARIO DINAMICO -->
+                                    Ultimo accesso oggi alle {{orario}}
                                 </div>
                             </div>
                         </div>
@@ -120,13 +124,13 @@
                     
                     >
                     
-                    <!-- ******** need styling -->
-                    <div :class="element.status" >
-                        {{element.message}}
-                        <p>
-                            {{element.date}}
-                        </p>
-                    </div>  
+                   
+                        <div :class="element.status" >
+                            {{element.message}}
+                            <p>
+                                {{element.date}}
+                            </p>
+                        </div>  
                     
                     
                     

@@ -4,9 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
-/* *************************** */
 
 /* utility */
 
@@ -21,7 +21,11 @@
 
 /* ********************* */
 p{
-    font-size: smaller;
+    font-size: 10px;
+    text-align: right;
+    margin-top: 3px;
+    color: #b5b9bb;
+    font-weight: bolder;
 }
 
 i{
@@ -46,7 +50,7 @@ img{
 
 input[type=text]:focus{
    border-color: #5aabda;
-   box-shadow: 0 0 8px 0 #5aabda;
+   box-shadow: 1px 1px 3px 3px#5aabda;
 }
 
 /* editing section */
@@ -185,14 +189,9 @@ aside{
     cursor: pointer;
 }
 
-/* NON RIESCO A FARLO FUNZIONARE */
-/* *************************** */
 .aside-container-single-user.active {
     background: #eee;
 }
-
-/* ***************************** */
-
 
 /* container messages right side */
 .container-messages-right-side{
@@ -246,37 +245,42 @@ aside{
     overflow-y: auto;
 }
 
-
 .container-right-side-main{
     display: flex;  
     flex-direction: column;
     padding: 0 10px;
 }
-/* ****************************** need styling */
+
 .received{
     background-color: white;
     justify-content: flex-end;
-    max-width: 300px;
+    width: 350px;
+    line-height: 16px;
     padding: 10px;
     border-radius:10px;
     display: flex;
     flex-direction: column;
-    margin: 15px 0;
+    margin: 10px 30px;
     align-self: flex-start;
 }
 
 .sent{
     background-color: #cbfbb3;
     justify-content: flex-end;
-    max-width: 300px;
+    width: 350px;
+    line-height: 16px;
     padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    margin: 15px 0;
+    margin: 10px 30px;
     align-self: flex-end;
 }
 
+.container-right-side-main>div{
+    font-size: 16px;
+    
+}
 
 .container-right-side-footer{
     display: flex;
@@ -284,7 +288,6 @@ aside{
     align-items: center;
     height: 70px;
     background-color: #f4eeea;
-    /* overflow-x: hidden; */
     flex-shrink: 0;
 }
 

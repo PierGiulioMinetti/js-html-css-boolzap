@@ -6,7 +6,7 @@ var app = new Vue({
     data: {
         activeIndex: 0,
         NuovoMessaggio: '',
-
+        orario: dayjs().format('HH:mm'),
         verificaUtente: '',
         // nostro account
         user: {
