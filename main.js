@@ -4,9 +4,10 @@
 var app = new Vue({
     el: '#app',
     data: {
-        realDdate : dayjs().format('DD/MM/YYYY HH:mm'),
         activeIndex: 0,
         NuovoMessaggio: '',
+
+        verificaUtente: '',
         // nostro account
         user: {
             name: 'Nome Utente',
@@ -108,7 +109,7 @@ var app = new Vue({
         addMessage(activeIndex){
             
             this.contacts[activeIndex].messages.push({
-                date: this.realDdate,
+                date: dayjs().format('DD/MM/YYYY HH:mm'),
                 message: this.NuovoMessaggio,
                 status: 'sent',
                 
@@ -119,11 +120,15 @@ var app = new Vue({
         messageTimeOut(activeIndex){
             setTimeout(() => {
                 this.contacts[activeIndex].messages.push({
-                    date: this.realDdate,
+                    date: dayjs().format('DD/MM/YYYY HH:mm'),
                     message: 'ok bro',
                     status: 'received',
                 });
             }, 1500);
+        },
+
+        mostra(){
+            console.log(this.verificaUtente);
         }
 
     } // --> end methods

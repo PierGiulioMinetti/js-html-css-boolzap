@@ -56,7 +56,14 @@
                     <div class="content-aside-search-bar pos-rel">
                         <i id="lente-search" class="fas fa-search pos-abs">
                         </i>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        <!-- VERIFICA UTENTE INPUT-->
+                        <input 
+                            type="text" 
+                            placeholder="Cerca o inizia una nuova chat"
+                            @keyup="mostra"
+                            v-model="verificaUtente"
+                            >
+                            
                     </div>
                 </div>
                 <div class="aside-container-users">
@@ -65,14 +72,18 @@
                          @click="mostraIndice(index)"
                          :class="activeIndex == index ? 'active' :  ' ' "
                     >
-                        <img :src="'./img/avatar' + element.avatar + '.jpg'" alt="">
+                        <img
+                        v-show="element.name.includes(verificaUtente) ? true : false"
+                        
+                        :src="'./img/avatar' + element.avatar + '.jpg'" alt="">
                         <!-- FUNZIONE CLICK -->
-                        <div>
+                        <!-- VERIFICA UTENTE OUTPUT-->
+                        <div
+                        v-show="element.name.includes(verificaUtente) ? true : false"
+                        >
                             {{element.name}}
                         </div>
                     </div>
-
-
                 </div>
             </aside>
             <!-- right section container -->
