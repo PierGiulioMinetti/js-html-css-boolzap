@@ -60,8 +60,8 @@
                         <input 
                             type="text" 
                             placeholder="Cerca o inizia una nuova chat"
-                            @keyup="mostra"
                             v-model="verificaUtente"
+                            @keyup="mostra()"
                             >
                             
                     </div>
@@ -72,14 +72,15 @@
                          @click="mostraIndice(index)"
                          :class="activeIndex == index ? 'active' :  ' ' "
                     >
+                        <!-- VERIFICA UTENTE IMG -->
                         <img
-                        v-show="element.name.includes(verificaUtente) ? true : false"
+                        v-show="element.visible == true ? true : false"
                         
                         :src="'./img/avatar' + element.avatar + '.jpg'" alt="">
                         <!-- FUNZIONE CLICK -->
                         <!-- VERIFICA UTENTE OUTPUT-->
                         <div
-                        v-show="element.name.includes(verificaUtente) ? true : false"
+                        v-show="element.visible == true ? true : false"
                         >
                             {{element.name}}
                         </div>

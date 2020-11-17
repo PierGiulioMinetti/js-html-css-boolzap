@@ -129,8 +129,17 @@ var app = new Vue({
 
         mostra(){
             console.log(this.verificaUtente);
-        }
+            this.contacts.forEach((element) => {
+                if ( element.name.toLowerCase().includes(this.verificaUtente.toLowerCase())){
+                    element.visible = true;
+                } else {
+                    element.visible = false;
+                }
+                
+            });
+        },
+
 
     } // --> end methods
 
-});
+});  //--> end vue
